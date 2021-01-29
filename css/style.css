@@ -1,0 +1,52 @@
+.dino {
+  width: 60px;
+  height: 60px;
+  background: url(../assets/dino.png);
+  position: absolute;
+  bottom: 0;
+}
+
+.cactus {
+  width: 60px;
+  height: 60px;
+  background: url(../assets/cactus.png);
+  position: absolute;
+  bottom: 0;
+}
+
+.game-over {
+  text-align: center;
+  color: #666;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@-webkit-keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0;
+  }
+}
+
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0;
+  }
+}
+
+.background {
+  position: absolute;
+  background: #999 url(../assets/background.png);
+  background-repeat: repeat-x;
+  -webkit-animation: slideright 600s infinite linear;
+          animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
